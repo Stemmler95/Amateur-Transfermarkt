@@ -6,28 +6,33 @@
     <title>Amateur-Transfermarkt</title>
     <style>
       body { font-family: system-ui, Arial, sans-serif; margin: 0; }
-      header { padding: 32px 20px; background: #111; color: #fff; }
+      header { padding: 20px; background: #111; color: #fff; }
+      nav a { color: #fff; margin-right: 15px; text-decoration: none; }
+      nav a:hover { text-decoration: underline; }
       main { padding: 24px; max-width: 900px; margin: 0 auto; }
-      .card { border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; }
-      a.btn { display:inline-block; padding:10px 14px; border:1px solid #111; border-radius:8px; text-decoration:none; }
     </style>
   </head>
   <body>
     <header>
       <h1>Amateur-Transfermarkt</h1>
       <p>Plattform für Spieler & Vereine im Amateurfußball</p>
+      <!-- 🔗 Navigation -->
+      <nav>
+        <a href="index.html">Startseite</a>
+        <a href="spieler.html">Spieler</a>
+        <a href="vereine.html">Vereine</a>
+      </nav>
     </header>
+
     <main>
-      <div class="card">
-        <h2>Willkommen 👋</h2>
-        <p>Hier entsteht deine Transfer- und Netzwerkplattform.</p>
-        <ul>
-          <li>Spielerprofile (Position, Verein, Stats)</li>
-          <li>Vereine können suchen & Kontakt aufnehmen</li>
-          <li>Transferstatus: frei / im Vertrag</li>
-        </ul>
-        <p><a class="btn" href="#">Demnächst: Registrierung</a></p>
-      </div>
+      <h2>Willkommen 👋</h2>
+      <p>Hier entsteht deine Transfer- und Netzwerkplattform.</p>
+      <ul>
+        <li>Spielerprofile (Position, Verein, Stats)</li>
+        <li>Vereine können suchen & Kontakt aufnehmen</li>
+        <li>Transferstatus: frei / im Vertrag</li>
+      </ul>
+      <p><a href="#">Demnächst: Registrierung</a></p>
     </main>
   </body>
 </html>

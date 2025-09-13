@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kontakt – Amateur-Transfermarkt</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="wrap">
+      <a class="brand" href="index.html"><span class="dot"></span>Amateur-Transfermarkt</a>
+      <nav>
+        <a href="index.html">Startseite</a>
+        <a href="spieler.html">Spieler</a>
+        <a href="vereine.html">Vereine</a>
+        <a class="active" href="kontakt.html">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="wrap hero">
+    <h1>Kontakt & Anfragen</h1>
+    <p>Stell dich kurz vor und sag uns, worum es geht. Wir melden uns!</p>
+  </section>
+
+  <!-- Variante A: mailto (ganz ohne Dienst/Backend) -->
+  <!-- Hinweis: Öffnet das lokale Mailprogramm des Nutzers, nicht 100% zuverlässig -->
+  <section class="wrap">
+    <form class="card form" action="mailto:dein.email@beispiel.de" method="post" enctype="text/plain">
+      <div class="field">
+        <label for="name">Name</label>
+        <input id="name" name="Name" required />
+      </div>
+      <div class="field">
+        <label for="email">E-Mail</label>
+        <input id="email" name="Email" type="email" required />
+      </div>
+      <div class="field">
+        <label for="rolle">Ich bin</label>
+        <select id="rolle" name="Rolle" required>
+          <option value="">Bitte wählen…</option>
+          <option>Spieler</option>
+          <option>Verein / Trainer</option>
+          <option>Scout</option>
+          <option>Sonstiges</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="nachricht">Nachricht</label>
+        <textarea id="nachricht" name="Nachricht" placeholder="Kurz und knackig …" required></textarea>
+      </div>
+      <button class="btn" type="submit">Nachricht senden</button>
+      <a class="btn ghost" href="index.html" style="margin-left:8px">Abbrechen</a>
+      <p class="badge" style="margin-top:10px">Hinweis: Öffnet dein Mailprogramm</p>
+    </form>
+  </section>
+
+  <footer class="footer">© 2025 Amateur-Transfermarkt</footer>
+
+  <!-- Kleine Client-Validierung (optional) -->
+  <script>
+    document.querySelector("form").addEventListener("submit", (e)=>{
+      const email = document.getElementById("email").value.trim();
+      if(!email.includes("@")) {
+        e.preventDefault();
+        alert("Bitte eine gültige E-Mail eingeben.");
+      }
+    });
+  </script>
+</body>
+</html>

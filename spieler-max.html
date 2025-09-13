@@ -3,20 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Spieler – Amateur-Transfermarkt</title>
+  <title>Max Beispiel – Spielerprofil | Amateur-Transfermarkt</title>
   <link rel="stylesheet" href="styles.css" />
-  <style>
-    /* kleine, seitenbezogene Ergänzung */
-    .filters{display:grid; gap:10px; grid-template-columns: repeat(4, minmax(120px,1fr));}
-    .filters input, .filters select{
-      width:100%; padding:10px 12px; border-radius:10px; border:1px solid var(--border);
-      background:#0f1320; color:var(--text);
-    }
-    @media (max-width:700px){ .filters{grid-template-columns:1fr 1fr;} }
-  </style>
 </head>
 <body>
-  <!-- Header -->
   <header class="header">
     <div class="wrap topbar">
       <a class="brand" href="index.html"><span class="logo"></span>Amateur-Transfermarkt</a>
@@ -30,87 +20,63 @@
   </header>
 
   <main class="wrap">
-    <!-- Hero -->
     <section class="section hero">
-      <h1>Spielerübersicht</h1>
-      <p>Beispielkarten – später kommen hier echte Profile mit Suche & Filter.</p>
+      <h1>Max Beispiel <span class="badge">ST</span></h1>
+      <p class="badge">Transferstatus: Suche Verein</p>
     </section>
 
-    <!-- (optische) Filterleiste -->
     <section class="section">
-      <div class="card">
-        <div class="filters">
-          <select>
-            <option>Position</option>
-            <option>Torwart (TW)</option>
-            <option>Abwehr (IV/AV)</option>
-            <option>Mittelfeld (ZM/OM/DM)</option>
-            <option>Sturm (ST/HS)</option>
-          </select>
-          <select>
-            <option>Fuß</option>
-            <option>rechts</option>
-            <option>links</option>
-            <option>beidfüßig</option>
-          </select>
-          <input placeholder="Region / PLZ" />
-          <select>
-            <option>Altersgruppe</option>
-            <option>U18</option>
-            <option>18–23</option>
-            <option>24–29</option>
-            <option>30+</option>
-          </select>
+      <div class="profile">
+        <!-- Linke Spalte -->
+        <div>
+          <div class="avatar">⚽</div>
+          <div class="pills">
+            <span class="pill">22 Jahre</span>
+            <span class="pill">rechts</span>
+            <span class="pill">178 cm</span>
+            <span class="pill">70 kg</span>
+          </div>
+
+          <div class="card" style="margin-top:16px">
+            <h3>Spielerdaten</h3>
+            <div class="kv">
+              <div>Position</div><div>Stürmer (ST)</div>
+              <div>Akt. Verein</div><div>vereinslos</div>
+              <div>Region</div><div>NRW · Köln</div>
+              <div>Kontakt</div>
+              <div>
+                <a class="btn" href="kontakt.html?spieler=Max%20Beispiel">Interesse bekunden</a>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
 
-    <!-- Karten -->
-    <section class="section">
-      <div class="grid cards">
-        <!-- MAX BEISPIEL – verlinkt zur Detailseite -->
-        <article class="card">
-          <h3>Max Beispiel</h3>
-          <p class="badge">ST • rechts • 22</p>
-          <p>Verein: vereinslos</p>
-          <a class="btn ghost" href="spieler-max.html">Profil ansehen</a>
-        </article>
+        <!-- Rechte Spalte -->
+        <div class="grid" style="gap:16px">
+          <article class="card stat-card">
+            <h3>Aktuelle Saison (2024/25)</h3>
+            <p><span class="big">16</span> Spiele · <span class="big">11</span> Tore · <span class="big">5</span> Assists</p>
+            <p class="badge">Letzte 5 Spiele: 4 Tore</p>
+          </article>
 
-        <!-- Weitere Dummy-Spieler (links können später zu eigenen Seiten führen) -->
-        <article class="card">
-          <h3>Leo Probe</h3>
-          <p class="badge">ZM • beidfüßig • 25</p>
-          <p>Verein: SV Demo</p>
-          <a class="btn ghost" href="#">Profil ansehen</a>
-        </article>
+          <article class="card">
+            <h3>Statistiken nach Saison</h3>
+            <table class="table">
+              <thead><tr><th>Saison</th><th>Verein</th><th>Spiele</th><th>Tore</th><th>Assists</th></tr></thead>
+              <tbody>
+                <tr><td>2024/25</td><td>vereinslos (Freundschaft/Turniere)</td><td>16</td><td>11</td><td>5</td></tr>
+                <tr><td>2023/24</td><td>SV Demo</td><td>24</td><td>14</td><td>6</td></tr>
+                <tr><td>2022/23</td><td>FC Musterstadt II</td><td>21</td><td>9</td><td>3</td></tr>
+              </tbody>
+            </table>
+          </article>
 
-        <article class="card">
-          <h3>Jonas Test</h3>
-          <p class="badge">TW • rechts • 20</p>
-          <p>Verein: SpVgg Platz</p>
-          <a class="btn ghost" href="#">Profil ansehen</a>
-        </article>
-
-        <article class="card">
-          <h3>Emre Muster</h3>
-          <p class="badge">IV • rechts • 24</p>
-          <p>Verein: FC Beispielstadt</p>
-          <a class="btn ghost" href="#">Profil ansehen</a>
-        </article>
-
-        <article class="card">
-          <h3>Nico Demo</h3>
-          <p class="badge">OM • links • 23</p>
-          <p>Verein: TSV Referenz</p>
-          <a class="btn ghost" href="#">Profil ansehen</a>
-        </article>
-
-        <article class="card">
-          <h3>Luis Sample</h3>
-          <p class="badge">RV • rechts • 21</p>
-          <p>Verein: SC Pattern</p>
-          <a class="btn ghost" href="#">Profil ansehen</a>
-        </article>
+          <article class="card">
+            <h3>Spielstil & Highlights</h3>
+            <p>Schneller Abschluss im Strafraum, guter erster Kontakt, Pressingstark.</p>
+            <p class="badge">Video folgt</p>
+          </article>
+        </div>
       </div>
     </section>
   </main>

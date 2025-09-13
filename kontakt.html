@@ -30,7 +30,40 @@
       <!-- <form class="card form" action="https://formspree.io/f/DEINE_ID" method="POST"> -->
 
       <!-- Variante B: mailto (einfach, öffnet Mailprogramm) -->
-      <form class="card form" action="mailto:DEINE.EMAIL@BEISPIEL.DE" method="post" enctype="text/plain">
+      <form class="card form" action="https://formspree.io/f/xzzawwpd" method="POST">
+  <!-- Nach dem Absenden weiterleiten -->
+  <input type="hidden" name="_redirect" value="https://amateur-transfermarkt.vercel.app/danke.html" />
+  <input type="hidden" name="Quelle" value="Kontaktformular" />
+
+  <div class="field">
+    <label for="name">Name</label>
+    <input id="name" name="Name" required />
+  </div>
+
+  <div class="field">
+    <label for="email">E-Mail</label>
+    <input id="email" name="Email" type="email" required />
+  </div>
+
+  <div class="field">
+    <label for="rolle">Ich bin</label>
+    <select id="rolle" name="Rolle" required>
+      <option value="">Bitte wählen…</option>
+      <option>Spieler</option>
+      <option>Verein / Trainer</option>
+      <option>Scout</option>
+      <option>Sonstiges</option>
+    </select>
+  </div>
+
+  <div class="field">
+    <label for="nachricht">Nachricht</label>
+    <textarea id="nachricht" name="Nachricht" placeholder="Kurz und knackig …" required></textarea>
+  </div>
+
+  <button class="btn" type="submit">Nachricht senden</button>
+  <a class="btn ghost" href="index.html">Abbrechen</a>
+</form>
         <div class="field">
           <label for="name">Name</label>
           <input id="name" name="Name" required />

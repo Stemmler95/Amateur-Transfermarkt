@@ -1,36 +1,49 @@
 <!doctype html>
 <html lang="de">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Vereine - Amateur-Transfermarkt</title>
-    <style>
-      body { font-family: system-ui, Arial, sans-serif; margin: 0; }
-      header { padding: 20px; background: #111; color: #fff; }
-      nav a { color: #fff; margin-right: 15px; text-decoration: none; }
-      nav a:hover { text-decoration: underline; }
-      main { padding: 24px; max-width: 900px; margin: 0 auto; }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>Amateur-Transfermarkt</h1>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vereine – Amateur-Transfermarkt</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="wrap">
+      <a class="brand" href="index.html"><span class="dot"></span>Amateur-Transfermarkt</a>
       <nav>
         <a href="index.html">Startseite</a>
         <a href="spieler.html">Spieler</a>
-        <a href="vereine.html">Vereine</a>
+        <a class="active" href="vereine.html">Vereine</a>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    <main>
-      <h2>Vereinsbereich 🏟️</h2>
-      <p>Hier werden später Vereinsprofile angezeigt.</p>
-      <ul>
-        <li>Vereinsname</li>
-        <li>Liga</li>
-        <li>Ort</li>
-        <li>Offene Positionen</li>
-      </ul>
-    </main>
-  </body>
+  <section class="wrap hero">
+    <h1>Vereinsübersicht</h1>
+    <p>Demnächst: Vereinsprofile, offene Positionen & Ansprechpartner.</p>
+  </section>
+
+  <section class="cards wrap">
+    <article class="card">
+      <h3>FC Musterstadt</h3>
+      <p class="badge">Kreisliga A • NRW</p>
+      <p>Sucht: ST, IV</p>
+      <a class="btn ghost" href="#">Kontakt</a>
+    </article>
+    <article class="card">
+      <h3>SV Demo</h3>
+      <p class="badge">Bezirksliga • Bayern</p>
+      <p>Sucht: ZM</p>
+      <a class="btn ghost" href="#">Kontakt</a>
+    </article>
+    <article class="card">
+      <h3>SpVgg Platz</h3>
+      <p class="badge">Kreisklasse • Hessen</p>
+      <p>Sucht: TW</p>
+      <a class="btn ghost" href="#">Kontakt</a>
+    </article>
+  </section>
+
+  <footer class="footer">© 2025 Amateur-Transfermarkt</footer>
+</body>
 </html>

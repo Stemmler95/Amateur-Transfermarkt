@@ -1,38 +1,51 @@
 <!doctype html>
 <html lang="de">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Amateur-Transfermarkt</title>
-    <style>
-      body { font-family: system-ui, Arial, sans-serif; margin: 0; }
-      header { padding: 20px; background: #111; color: #fff; }
-      nav a { color: #fff; margin-right: 15px; text-decoration: none; }
-      nav a:hover { text-decoration: underline; }
-      main { padding: 24px; max-width: 900px; margin: 0 auto; }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>Amateur-Transfermarkt</h1>
-      <p>Plattform für Spieler & Vereine im Amateurfußball</p>
-      <!-- 🔗 Navigation -->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Amateur-Transfermarkt</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="wrap">
+      <a class="brand" href="index.html"><span class="dot"></span>Amateur-Transfermarkt</a>
       <nav>
-        <a href="index.html">Startseite</a>
+        <a class="active" href="index.html">Startseite</a>
         <a href="spieler.html">Spieler</a>
         <a href="vereine.html">Vereine</a>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    <main>
-      <h2>Willkommen 👋</h2>
-      <p>Hier entsteht deine Transfer- und Netzwerkplattform.</p>
-      <ul>
-        <li>Spielerprofile (Position, Verein, Stats)</li>
-        <li>Vereine können suchen & Kontakt aufnehmen</li>
-        <li>Transferstatus: frei / im Vertrag</li>
-      </ul>
-      <p><a href="#">Demnächst: Registrierung</a></p>
-    </main>
-  </body>
+  <section class="wrap hero">
+    <h1>Plattform für Transfers im Amateurfußball</h1>
+    <p>Profile, Statistiken & Kontakt zwischen Spielern und Vereinen – schlank, schnell, kostenfrei.</p>
+  </section>
+
+  <section class="cards wrap">
+    <article class="card">
+      <h3>Spielerprofile</h3>
+      <p>Position, Verein, bevorzugter Fuß, Saison-Stats & Highlights.</p>
+      <span class="badge">Bald: Verifizierung</span>
+    </article>
+    <article class="card">
+      <h3>Transfers</h3>
+      <p>„Suche Verein“, „Im Vertrag“ oder „Verfügbar ab …“ sichtbar machen.</p>
+      <span class="badge">Status setzen</span>
+    </article>
+    <article class="card">
+      <h3>Vereine</h3>
+      <p>Nach Position, Alter oder Region filtern und direkt kontaktieren.</p>
+      <span class="badge">Scout-Listen</span>
+    </article>
+  </section>
+
+  <section class="wrap" style="padding:8px 20px 36px">
+    <a class="btn" href="#">Demnächst: Registrierung</a>
+    <a class="btn ghost" href="spieler.html" style="margin-left:10px">Spieler entdecken</a>
+  </section>
+
+  <footer class="footer">© 2025 Amateur-Transfermarkt</footer>
+</body>
 </html>
